@@ -1,2 +1,2 @@
 # GoogleSlides-Gen
-Tool for making google slides over a date range
+Web tool using .net 8 for making google slides over a date range 
