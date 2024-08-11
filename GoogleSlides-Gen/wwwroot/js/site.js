@@ -130,3 +130,10 @@ module.exports.createSlides = (authAndGHData) => new Promise((resolve, reject) =
         });
     });
 });
+
+/*STEPS OF MY METHOD 
+ * 1. go through each dateOnly[]
+ * 2. Check to see if the user slected to exclude the 2024 holiday dates  
+ * 3. run the filter dates method for each dateOnly array 
+ * 4. make a slide with the title obj + "Afternoon Meeeting"
+*/

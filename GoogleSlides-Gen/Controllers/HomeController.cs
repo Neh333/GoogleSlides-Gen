@@ -5,6 +5,7 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Download;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
+using Microsoft.VisualBasic;
 
 
 
@@ -41,9 +42,9 @@ namespace GoogleSlides_Gen.Controllers
             return View();
         }
 
-        public void CreateSlides(bool excludeHolidays)
+        public JsonResult FilterDates(bool excludeHolidays)
         {
-            List<DateOnly> datesInRange = new List<DateOnly>();
+            List<DateOnly> DatesInRange = new List<DateOnly>();
             
             /*go through each date range*/
             for (int i = 0; i < dateRanges.Count(); i++)
@@ -51,21 +52,21 @@ namespace GoogleSlides_Gen.Controllers
                 DateOnly startDate = dateRanges[i][0];
                 DateOnly endDate = dateRanges[i][1];
 
-                var query = datesInRange.Where(d => d.DayOfWeek != DayOfWeek.Sunday ||
-                     d.DayOfWeek != DayOfWeek.Saturday).ToList();
+                /*<= overload to keep on continue to dates after [i][0]*/
+                for (var dt = dateRanges[i][0]; dt <= dateRanges[i][1]; dt = dt.AddDays(1)) 
+                {
+                    DatesInRange.Add(dt);
+                }
 
-                Mon_FriDatesInRange = query;
+                this.Mon_FriDatesInRange = DatesInRange.Where(d => d.DayOfWeek != DayOfWeek.Sunday ||
+                     d.DayOfWeek != DayOfWeek.Saturday).ToList();
 
                 if (excludeHolidays)
                 {
-                    Mon_FriDatesInRange = ExcludeHolidays(Mon_FriDatesInRange);
-                }
-
-                foreach (var dateRange in Mon_FriDatesInRange)
-                {
-                    //api calls to make slides for each M-F in date range 
+                    this.Mon_FriDatesInRange = ExcludeHolidays(this.Mon_FriDatesInRange);
                 }
             }
+            return Json(Mon_FriDatesInRange);
         }
 
         public List<DateOnly> ExcludeHolidays(List<DateOnly> dates)
