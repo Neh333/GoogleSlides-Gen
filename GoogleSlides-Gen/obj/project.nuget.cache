@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t5X8TXwlrFU=",
+  "dgSpecHash": "/Z9saZob6vE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
+  "projectFilePath": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahugh\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\ahugh\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",

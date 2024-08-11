@@ -1,12 +1,19 @@
 using GoogleSlides_Gen.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Download;
+using Google.Apis.Drive.v3;
+using Google.Apis.Services;
+
+
 
 namespace GoogleSlides_Gen.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
         /*
          * DateOnly array 1: {start date, end date}, DateOnly array ...: {start date, end date}
         */
