@@ -346,23 +346,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahugh\\.nuget\\packages\\": {},
+    "C:\\Users\\NHughes\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
+      "projectUniqueName": "C:\\Users\\NHughes\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
       "projectName": "GoogleSlides-Gen",
-      "projectPath": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
-      "packagesPath": "C:\\Users\\ahugh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\obj\\",
+      "projectPath": "C:\\Users\\NHughes\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\GoogleSlides-Gen.csproj",
+      "packagesPath": "C:\\Users\\NHughes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NHughes\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ahugh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NHughes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -423,7 +423,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

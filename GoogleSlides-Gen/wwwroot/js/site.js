@@ -94,42 +94,59 @@ module.exports.createSlides = (authAndGHData) => new Promise((resolve, reject) =
     console.log('creating slides...');
     const [auth, ghData] = authAndGHData;
 
-    // First copy the template slide from drive.
-    drive.files.copy({
-        auth: auth,
-        fileId: '1toV2zL0PrXJOfFJU-NYDKbPx9W0C4I-I8iT85TS0fik',
-        fields: 'id,name,webViewLink',
-        resource: {
-            name: SLIDE_TITLE_TEXT
-        }
-    }, (err, presentation) => {
-        if (err) return reject(err);
+    $("div.submitButton").on("click", function () {
+        const excludeHolidays = $(this).prop("holidays");
+        $.ajax({
+            type: "POST",
+            url: rootUrl + "Home/FilterWeekdays",
+        })
+        .done((data) => {
+            if (data) {
+                data.foreach()
+                // First copy the template slide from drive.
+                drive.files.copy({
+                    auth: auth,
+                    fileId: '1toV2zL0PrXJOfFJU-NYDKbPx9W0C4I-I8iT85TS0fik',
+                    fields: 'id,name,webViewLink',
+                    resource: {
+                        name: SLIDE_TITLE_TEXT
+                    }
+                }, (err, presentation) => {
+                    if (err) return reject(err);
 
-        const allSlides = ghData.map((data, index) => createSlideJSON(data, index));
-        slideRequests = [].concat.apply([], allSlides); // flatten the slide requests
-        slideRequests.push({
-            replaceAllText: {
-                replaceText: SLIDE_TITLE_TEXT,
-                containsText: { text: '{{TITLE}}' }
+                    const allSlides = ghData.map((data, index) => createSlideJSON(data, index));
+                    slideRequests = [].concat.apply([], allSlides); // flatten the slide requests
+                    slideRequests.push({
+                        replaceAllText: {
+                            replaceText: SLIDE_TITLE_TEXT,
+                            containsText: { text: '{{TITLE}}' }
+                        }
+                    })
+
+                    // Execute the requests
+                    slides.presentations.batchUpdate({
+                        auth: auth,
+                        presentationId: presentation.id,
+                        resource: {
+                            requests: slideRequests
+                        }
+                    }, (err, res) => {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(presentation);
+                        }
+                    });
+                });
+            });
             }
         })
+        .fail((jqxhr, exception) => {
 
-        // Execute the requests
-        slides.presentations.batchUpdate({
-            auth: auth,
-            presentationId: presentation.id,
-            resource: {
-                requests: slideRequests
-            }
-        }, (err, res) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(presentation);
-            }
-        });
+        })
     });
-});
+
+   
 
 /*STEPS OF MY METHOD 
  * 1. go through each dateOnly[]
