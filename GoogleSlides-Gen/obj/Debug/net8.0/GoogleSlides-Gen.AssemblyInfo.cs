@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleSlides-Gen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17c991cd855dfa7d03a028fd2bd28fde37dd5d21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+606a65bde3a2723f0032f378c0eed42065ee9065")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleSlides-Gen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleSlides-Gen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
