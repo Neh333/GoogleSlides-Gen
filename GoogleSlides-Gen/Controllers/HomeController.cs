@@ -30,7 +30,7 @@ namespace GoogleSlides_Gen.Controllers
            new DateOnly(2025, 4, 18), //good friday 
         };
 
-        List<DateOnly> Mon_FriDatesInRange { get; set; } = new List<DateOnly>();
+        List<DateOnly> WeekdayDatesInRange { get; set; } = new List<DateOnly>();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -42,7 +42,7 @@ namespace GoogleSlides_Gen.Controllers
             return View();
         }
 
-        public JsonResult FilterDates(bool excludeHolidays)
+        public JsonResult FilterWeekdays(bool excludeHolidays)
         {
             List<DateOnly> DatesInRange = new List<DateOnly>();
             
@@ -52,21 +52,20 @@ namespace GoogleSlides_Gen.Controllers
                 DateOnly startDate = dateRanges[i][0];
                 DateOnly endDate = dateRanges[i][1];
 
-                /*<= overload to keep on continue to dates after [i][0]*/
                 for (var dt = dateRanges[i][0]; dt <= dateRanges[i][1]; dt = dt.AddDays(1)) 
                 {
                     DatesInRange.Add(dt);
                 }
 
-                this.Mon_FriDatesInRange = DatesInRange.Where(d => d.DayOfWeek != DayOfWeek.Sunday ||
+                WeekdayDatesInRange = DatesInRange.Where(d => d.DayOfWeek != DayOfWeek.Sunday ||
                      d.DayOfWeek != DayOfWeek.Saturday).ToList();
 
                 if (excludeHolidays)
                 {
-                    this.Mon_FriDatesInRange = ExcludeHolidays(this.Mon_FriDatesInRange);
+                    WeekdayDatesInRange = ExcludeHolidays(WeekdayDatesInRange);
                 }
             }
-            return Json(Mon_FriDatesInRange);
+            return Json(WeekdayDatesInRange);
         }
 
         public List<DateOnly> ExcludeHolidays(List<DateOnly> dates)
