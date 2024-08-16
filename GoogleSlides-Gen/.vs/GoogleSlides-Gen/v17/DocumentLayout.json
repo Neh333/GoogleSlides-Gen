@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|c:\\users\\ahugh\\source\\repos\\googleslides-gen\\googleslides-gen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|c:\\users\\ahugh\\source\\repos\\googleslides-gen\\googleslides-gen\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|c:\\users\\ahugh\\source\\repos\\googleslides-gen\\googleslides-gen\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|c:\\users\\ahugh\\source\\repos\\googleslides-gen\\googleslides-gen\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|c:\\users\\ahugh\\source\\repos\\googleslides-gen\\googleslides-gen\\wwwroot\\js\\slides.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1D9D28E8-3979-4128-9652-54B986961162}|GoogleSlides-Gen.csproj|solutionrelative:wwwroot\\js\\slides.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "DocumentIndex": 2,
+              "Title": "slides.js",
+              "DocumentMoniker": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\slides.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\slides.js",
+              "ToolTip": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\slides.js",
+              "RelativeToolTip": "wwwroot\\js\\slides.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-09T20:54:21.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T20:54:21.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T14:34:24.913Z"
+              "WhenOpened": "2024-08-09T14:34:24.913Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-09T14:24:13.388Z",
               "EditorCaption": ""
