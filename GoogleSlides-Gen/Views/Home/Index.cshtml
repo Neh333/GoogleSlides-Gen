@@ -5,22 +5,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div class="text-center mb-4">
     <h1>Google Slide Gen Tool</h1>
 </div>
-
-<form>
-    @{int count = 1;}
-    @for(int i = 1; i<count; i++)
-    {
-        
-    }
-    <a class="btn">add more date ranges</a> @*add js to inc count *@
-</form>
-
-<div class="justify-content-center">
-   <a class="btn">Submit</a>
+<div class="mx-auto text-center">
+    <div class="mb-4">    
+        <form>
+            @{int count = 1;}
+            @for(int i = 1; i<count+1; i++)
+            {
+             <div class="row col-2 mx-auto mb-4">
+                <div class="mb-2">
+                    <h3>date range @i : </h3>
+                    <label for="dateOne">Start Date</label>
+                    <input type="date" id="dateOne" name="dateOne"></input>
+                </div> 
+                <div class="mb-2">
+                    <label for="dateTwo">End Date </label>
+                    <input type="date" id="datTwo" name="dateTwo"></input>
+                </div>
+             </div>
+            }
+            @*Invisible input to take in the current count *@
+            <input type="button" class="incrementer" id="" value=@count />
+            <a class="btn btn-outline-dark">add more date ranges</a> @*add js to inc count *@
+        </form>
+    </div>  
+    <a class="btn btn-outline-dark">Submit</a>
 </div>
-
 
 <script src="~/js/slides.js"/>
