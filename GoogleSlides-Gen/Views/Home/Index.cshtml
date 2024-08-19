@@ -27,8 +27,9 @@
              </div>
             }
             @*Invisible input to take in the current count *@
-            <input type="button" class="incrementer" id="" value=@count />
-            <a class="btn btn-outline-dark">add more date ranges</a> @*add js to inc count *@
+            <a class="btn btn-outline-dark" asp-controller="Home" asp-action="addDateRanges(@count)">
+                add more date ranges
+            </a> @*add js to inc count *@
         </form>
     </div>  
     <a class="btn btn-outline-dark">Submit</a>

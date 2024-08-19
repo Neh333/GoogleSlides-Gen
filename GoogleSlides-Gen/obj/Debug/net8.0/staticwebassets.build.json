@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QqPnjzIBzmUEguxvpZAGPKp3+JulnwvPTqzWHJflc6g=",
+  "Hash": "adz6XeNipKIXh4G8/yYoAsWBMRIMt4C1dKN+pfwnCEM=",
   "Source": "GoogleSlides-Gen",
   "BasePath": "_content/GoogleSlides-Gen",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\listener.js",
+      "SourceId": "GoogleSlides-Gen",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\",
+      "BasePath": "_content/GoogleSlides-Gen",
+      "RelativePath": "js/listener.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\listener.js"
     },
     {
       "Identity": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\slides.js",

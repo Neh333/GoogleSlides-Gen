@@ -42,6 +42,11 @@ namespace GoogleSlides_Gen.Controllers
             return View();
         }
 
+        public void addDateRanges(ref int count)
+        {
+            count++;
+        }
+
         public JsonResult FilterWeekdays(bool excludeHolidays)
         {
             List<DateOnly> DatesInRange = new List<DateOnly>();

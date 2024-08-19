@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\listener.js",
+      "PackagePath": "staticwebassets\\js\\listener.js"
+    },
+    {
       "Id": "C:\\Users\\ahugh\\source\\repos\\GoogleSlides-Gen\\GoogleSlides-Gen\\wwwroot\\js\\slides.js",
       "PackagePath": "staticwebassets\\js\\slides.js"
     },
