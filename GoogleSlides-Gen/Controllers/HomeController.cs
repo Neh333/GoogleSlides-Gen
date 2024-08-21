@@ -42,7 +42,7 @@ namespace GoogleSlides_Gen.Controllers
             return View();
         }
 
-        public void addDateRanges(ref int count)
+        public void addDateRanges(int count)
         {
             count++;
         }
